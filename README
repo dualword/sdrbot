@@ -1,0 +1,27 @@
+sdrBot is a receiver control software. Supported receivers: AOR AR8200.
+
+Requirements:
+- Operating system: Linux
+- QT framework, version 4.5
+- set AR8200 transfer speed to 19200, connect your receiver to serial port
+
+How to build:
+svn checkout svn://svn.code.sf.net/p/sdrbot/code/sdrbot-desktop/trunk sdrbotdesktop
+1.using autotools
+- cd sdrbotdesktop
+- autoreconf -i
+- ./configure
+- make all
+- ./src/sdrbotdesktop
+2.using qmake
+- cd sdrbotdesktop/src
+- qmake
+- make
+- ./sdrbotdesktop
+
+For new autotools project in Eclipse:
+- bootstrap the autotools: 'autoreconf -i'
+- Project - Reconfigure Project
+
+License: GNU GENERAL PUBLIC LICENSE Version 3
+

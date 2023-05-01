@@ -1,0 +1,10 @@
+#
+.build/
+/Makefile
+/src/Makefile
+
+#
+/.cproject
+/.project
+/.externalToolBuilders
+/.settings
